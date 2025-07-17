@@ -1,25 +1,17 @@
 import React, { useState } from "react";
-import {
-  DollarSign,
-  TrendingUp,
-  TrendingDown,
-  Users,
-  Building2,
-  Target,
-  Award,
-} from "lucide-react";
+import { TrendingUp, TrendingDown, Building2 } from "lucide-react";
 import AreaChart from "./charts/AreaChart";
 import ProgressCircle from "./charts/ProgressCircle";
 
 const CompanyDashboard = () => {
-  const [companyMetrics, setCompanyMetrics] = useState({
+  const [companyMetrics] = useState({
     revenue: { value: "$2.4M", change: "12.5%", trend: "up" },
     employees: { value: "1,247", change: "8.2%", trend: "up" },
     departments: { value: "12", change: "0%", trend: "neutral" },
     satisfaction: { value: "94%", change: "3.1%", trend: "up" },
   });
 
-  const [departmentPerformance, setDepartmentPerformance] = useState([
+  const [departmentPerformance] = useState([
     { name: "Engineering", performance: 95, budget: 85, employees: 145 },
     { name: "Sales", performance: 88, budget: 92, employees: 87 },
     { name: "Marketing", performance: 82, budget: 78, employees: 34 },
@@ -28,7 +20,7 @@ const CompanyDashboard = () => {
     { name: "Operations", performance: 89, budget: 86, employees: 156 },
   ]);
 
-  const [goals, setGoals] = useState([
+  const [goals] = useState([
     {
       title: "Q4 Revenue Target",
       progress: 78,

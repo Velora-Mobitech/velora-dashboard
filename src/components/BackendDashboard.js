@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import {
-  Server,
   Database,
   Cpu,
   HardDrive,
@@ -13,21 +12,21 @@ import AreaChart from "./charts/AreaChart";
 import ProgressCircle from "./charts/ProgressCircle";
 
 const BackendDashboard = () => {
-  const [systemMetrics, setSystemMetrics] = useState({
+  const [systemMetrics] = useState({
     cpu: { usage: 45, status: "normal" },
     memory: { usage: 67, status: "warning" },
     disk: { usage: 32, status: "normal" },
     network: { usage: 89, status: "high" },
   });
 
-  const [apiMetrics, setApiMetrics] = useState({
+  const [apiMetrics] = useState({
     totalRequests: "2.4M",
     responseTime: "124ms",
     errorRate: "0.02%",
     uptime: "99.9%",
   });
 
-  const [services, setServices] = useState([
+  const [services] = useState([
     {
       name: "User Authentication API",
       status: "healthy",

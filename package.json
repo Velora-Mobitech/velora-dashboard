@@ -14,10 +14,21 @@
     "react-chartjs-2": "^4.3.1",
     "lucide-react": "^0.263.1",
     "axios": "^0.27.2",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "framer-motion": "^10.16.4",
+    "react-spring": "^9.7.2",
+    "react-intersection-observer": "^9.5.2",
+    "react-hot-toast": "^2.4.1",
+    "react-loading-skeleton": "^3.3.1",
+    "react-countup": "^6.4.2",
+    "lottie-react": "^2.4.0",
+    "particles.js": "^2.0.0",
+    "react-helmet": "^6.1.0",
+    "gsap": "^3.12.2"
   },
   "scripts": {
     "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
